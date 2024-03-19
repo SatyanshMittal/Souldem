@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Souldem_backend": {
+      "main": "src/Souldem_backend/main.mo",
+      "type": "motoko"
+    },
+    "Souldem_frontend": {
+      "dependencies": [
+        "Souldem_backend"
+      ],
+      "source": [
+        "src/Souldem_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Souldem_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
