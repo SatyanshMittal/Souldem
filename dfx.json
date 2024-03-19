@@ -1,16 +1,20 @@
 {
   "canisters": {
-    "Souldem_backend": {
-      "main": "src/Souldem_backend/main.mo",
+    "members": {
+      "main": "src/Souldem_backend/members/main.mo",
+      "type": "motoko"
+    },
+    "proposal": {
+      "main": "src/Souldem_backend/proposal/main.mo",
+      "type": "motoko"
+    },
+    "token": {
+      "main": "src/Souldem_backend/token/main.mo",
       "type": "motoko"
     },
     "Souldem_frontend": {
-      "dependencies": [
-        "Souldem_backend"
-      ],
-      "source": [
-        "src/Souldem_frontend/dist"
-      ],
+      "dependencies": ["Souldem_backend"],
+      "source": ["src/Souldem_frontend/dist"],
       "type": "assets",
       "workspace": "Souldem_frontend"
     }
