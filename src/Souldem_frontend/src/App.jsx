@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Souldem_backend } from 'declarations/Souldem_backend';
-import navbar from 'components/navbar';
+import Navbar from '../components/navbar';
 
 function App() {
   const [greeting, setGreeting] = useState('');
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <main>
-      <navbar />
+      <Navbar />
     </main>
   );
 }
