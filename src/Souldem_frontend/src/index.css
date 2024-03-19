@@ -1,3 +1,65 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat' ,'poppins';
+}
+.navbar{
+    background: black;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: .5rem 2rem;
+}
+.align-left{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+.list-item{
+    font-size: .9rem;
+    font-weight: 600;
+}
+.button-small{
+    background-color: hsl(296deg 87% 41%);
+    color: white;
+    padding: .5rem 1rem;
+    border: 0;
+    border-radius: 5px;
+}
+.hero{
+    height: 90vh;
+    padding: 6rem;
+}
+.hero-section{
+    background: url('./assets/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.hero-heading{
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+}
+.hero-description{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+.button-large{
+    display: block;
+    margin: auto;
+    padding: 1rem 1.5rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: hsl(296deg 87% 41%);
+    color: white;
+    font-size: 1.5rem;
+
+}
